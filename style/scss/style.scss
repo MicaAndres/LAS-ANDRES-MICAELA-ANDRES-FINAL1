@@ -1,0 +1,145 @@
+@import "_variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+body{
+    background-color: $bgcolor;
+    font-family: $fontfamily;
+    color: $fontcolor;
+    header{
+        background-color: $colorheaderfooter;
+        justify-content: center;
+        border-bottom: solid 3px $colorborder;
+        margin-bottom: 20px;
+        div{
+            
+            img{
+               border-radius: 80px; 
+            }
+        } 
+        div{  
+            padding-top: 30px; 
+            ul{
+                display: flex;
+                justify-content: end;
+                li{
+                    a{
+                        text-decoration: none;
+                        font-family: $fontfamily; 
+                        color: $fontcolor; 
+                        &:hover{
+                            color: $fontcolor;
+                            font-size: 18px;
+                        }
+                    } 
+
+                }
+            }    
+            
+        } 
+        
+    }
+    div{
+       margin-bottom: 10px;     
+    }
+   
+    article{
+        display: flex;
+        justify-content: center;
+        outline: #22333b;
+        border-bottom: solid 1px #22333b;
+        input{
+            text-decoration-line: none;
+            border: 0;
+            text-decoration-color:#22333b;
+            background-color: #f9fafb;
+            color: #22333b;
+            border-bottom: solid 1px #22333b;
+            margin-bottom: 10px;
+        }
+        
+    }
+
+    aside{
+        img{
+            width: 120px ;
+            height: 300px;
+        }
+        input{
+
+            border-radius: 15px;
+            border: solid 2px $colorborder;
+            color: #22333b;
+            background-color: $bgcolor;
+            &:hover{
+                text-decoration: none;
+                background-color: $colorheaderfooter;
+               
+                  
+            }
+        }
+
+    }
+
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 400px;
+        padding-right: 400px;
+        margin-bottom: 20px;
+         
+        div.borderLeft{
+            border-left: solid 1px $fontcolor;
+            padding-left: 10px;
+        }
+        img.fotoOpcion{
+            max-width: 10%;
+            max-height: 10%;
+            padding-right: 5px;
+          
+            
+        }  
+ 
+        
+    }
+  
+    footer{
+        background-color: $colorheaderfooter;
+        border-top: solid 3px $colorborder;
+        margin-bottom: 20px;
+        ul{
+          a{
+            text-decoration: none;
+            font-family: $fontfamily; 
+            color: $fontcolor; 
+            font-size: 14px;
+            &:hover{
+                color: $fontcolor;
+                font-size: 18px;
+            }
+          } 
+        }
+        p{
+            a{
+                text-decoration: none;
+                font-family: $fontfamily; 
+                color: $fontcolor; 
+                font-size: 14px;
+                &:hover{
+                    font-size: 20px;
+                    background-color: black ;
+                    color:rgb(226, 81, 81);
+                    border-radius: 40%;
+                }
+            }
+        }
+        img{
+            max-width: 25px;
+            max-height: 25px;
+        }
+    }
+
+    
+
+}

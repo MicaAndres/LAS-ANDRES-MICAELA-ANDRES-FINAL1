@@ -43,7 +43,7 @@ body{
        margin-bottom: 10px;     
     }
    
-    article{
+    article.newsletter{
         display: flex;
         justify-content: center;
         outline: #22333b;
@@ -56,6 +56,7 @@ body{
             color: #22333b;
             border-bottom: solid 1px #22333b;
             margin-bottom: 10px;
+            
         }
         
     }
@@ -81,7 +82,7 @@ body{
 
     }
 
-    section{
+    section.sectionIndex{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -97,17 +98,14 @@ body{
             max-width: 10%;
             max-height: 10%;
             padding-right: 5px;
-          
-            
         }  
- 
-        
+      
     }
   
     footer{
         background-color: $colorheaderfooter;
         border-top: solid 3px $colorborder;
-        margin-bottom: 20px;
+        margin-top: 20px;
         ul{
           a{
             text-decoration: none;
@@ -140,6 +138,84 @@ body{
         }
     }
 
+    article.tituloSecundario{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    section.contacto{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
     
+        form{
+            padding: 20px;
+            border: solid 3px $colorborder;
+            background-color: $colorheaderfooter;
+            input{
+                border: solid 1px $fontcolor;
+                color: $fontcolor;
+                font-family: $fontfamily;
+            }
+            input::-webkit-input-placeholder{
+                text-align: center;
+                line-height: 100px;
+                padding-right: 50px;
+            
+            }
+            textarea{
+                text-align: center;
+                line-height: 50px;              
+            }
+            input.enviar{
+                border-radius: 5px;
+                border: solid 2px $colorborder;
+                color: #22333b;
+                background-color: $bgcolor;
+                &:hover{
+                    text-decoration: none;
+                    background-color: $colorheaderfooter;
+                }   
+                   
+            }
+        }    
+
+    }
+
+    section.gracias{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    section.inSesion{
+        form{
+            padding: 20px;
+            border: solid 3px $colorborder;
+            background-color: $colorheaderfooter;
+            input{
+                border: solid 1px $fontcolor;
+                color: $fontcolor;
+                font-family: $fontfamily;
+            }
+            input::-webkit-input-placeholder{
+                text-align: center;
+                line-height: 100px;
+                padding-right: 50px;
+            
+            }
+            input.enviar{
+                border-radius: 5px;
+                border: solid 2px $colorborder;
+                color: #22333b;
+                background-color: $bgcolor;
+                &:hover{
+                    text-decoration: none;
+                    background-color: $colorheaderfooter;
+                }   
+                   
+            }
+        }
+    }
 
 }

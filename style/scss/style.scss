@@ -13,7 +13,7 @@ body{
         margin-bottom: 20px;
         div{
             
-            img{
+            img.logo{
                border-radius: 80px; 
             }
         } 
@@ -215,6 +215,23 @@ body{
                 }   
                    
             }
+        }
+    }
+
+    aside.nosotras{
+        img.miMa{
+            width: 60%;
+            height: 60%;
+            
+        }
+        p{
+         padding: 5% 10% 5% 10%;  
+        }
+    }
+
+    section.preguntas{
+        h6{
+            border-bottom: solid 1px $fontcolor;
         }
     }
 

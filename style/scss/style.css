@@ -12,7 +12,7 @@ body header {
   margin-bottom: 20px;
 }
 
-body header div img {
+body header div img.logo {
   border-radius: 80px;
 }
 
@@ -211,4 +211,17 @@ body section.inSesion form input.enviar {
 body section.inSesion form input.enviar:hover {
   text-decoration: none;
   background-color: #FAF5F2;
+}
+
+body aside.nosotras img.miMa {
+  width: 60%;
+  height: 60%;
+}
+
+body aside.nosotras p {
+  padding: 5% 10% 5% 10%;
+}
+
+body section.preguntas h6 {
+  border-bottom: solid 1px #22333b;
 }

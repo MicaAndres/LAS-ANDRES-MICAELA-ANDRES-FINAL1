@@ -235,4 +235,35 @@ body{
         }
     }
 
+    section.productos{
+       div.card{
+           background-color: $bgcolor;
+           border: solid 2px $colorborder;
+       }
+        input{
+
+            border-radius: 15px;
+            border: solid 2px $colorborder;
+            color: #22333b;
+            background-color: $bgcolor;
+            &:hover{
+                text-decoration: none;
+                background-color: $colorheaderfooter;
+               
+                  
+            }
+        }
+
+    }
+    @media (min-width: 992px){
+        .card{
+            display: flex;
+            flex-direction: row;
+        }
+        .card img{
+            width: 60%;
+            height: 60%;
+        }
+    }
+
 }

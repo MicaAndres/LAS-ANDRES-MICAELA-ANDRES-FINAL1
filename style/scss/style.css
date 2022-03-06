@@ -225,3 +225,31 @@ body aside.nosotras p {
 body section.preguntas h6 {
   border-bottom: solid 1px #22333b;
 }
+
+body section.productos div.card {
+  background-color: #F9FAFB;
+  border: solid 2px #fceee6;
+}
+
+body section.productos input {
+  border-radius: 15px;
+  border: solid 2px #fceee6;
+  color: #22333b;
+  background-color: #F9FAFB;
+}
+
+body section.productos input:hover {
+  text-decoration: none;
+  background-color: #FAF5F2;
+}
+
+@media (min-width: 992px) {
+  body .card {
+    display: flex;
+    flex-direction: row;
+  }
+  body .card img {
+    width: 60%;
+    height: 60%;
+  }
+}

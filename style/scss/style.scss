@@ -84,6 +84,7 @@ body{
 
     section.sectionIndex{
         display: flex;
+
         align-items: center;
         justify-content: space-between;
         padding-left: 400px;
@@ -107,17 +108,22 @@ body{
         border-top: solid 3px $colorborder;
         margin-top: 20px;
         ul{
-          a{
-            text-decoration: none;
-            font-family: $fontfamily; 
-            color: $fontcolor; 
-            font-size: 14px;
-            &:hover{
-                color: $fontcolor;
-                font-size: 18px;
+            li{
+
+                a{
+                    text-decoration: none;
+                    font-family: $fontfamily; 
+                    color: $fontcolor; 
+                    font-size: 14px;
+                    &:hover{
+                        color: $fontcolor;
+                        font-size: 18px;
+                    }
+            }  
             }
-          } 
+          
         }
+
         p{
             a{
                 text-decoration: none;
@@ -228,10 +234,15 @@ body{
          padding: 5% 10% 5% 10%;  
         }
     }
-
+    
     section.preguntas{
+        h5{
+            font-weight: bold;
+            margin-right: 5%;
+        }
         h6{
             border-bottom: solid 1px $fontcolor;
+            margin-right: 10%;
         }
     }
 
@@ -241,7 +252,6 @@ body{
            border: solid 2px $colorborder;
        }
         input{
-
             border-radius: 15px;
             border: solid 2px $colorborder;
             color: #22333b;
@@ -255,7 +265,58 @@ body{
         }
 
     }
-    @media (min-width: 992px){
+
+    @media screen and (min-width: 360px) {
+        header{
+            button.navbar-toggler{
+                margin-left: 40%;
+            }
+            ul.flex-column{
+                justify-content: flex-start;
+                margin-left: 30%;
+                margin-bottom: 10%;       
+            }
+        }
+       
+        section{
+            div{
+                div.flexRow{
+                display: flex;
+                flex-direction: row;
+                margin: 5px;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 5%;
+                padding-top: 5%;
+                padding-left: 15%;
+                    ul{
+                        img.fotoOpcion{
+                         max-width: 10%;
+                         max-height: 10%;
+                        }
+                    }
+                
+                }
+            }
+        }     
+        
+        section.inSesion{
+            div.marginMobile{
+                padding-right: 2%;
+                
+            }
+        }
+
+       section.productos{
+           div.card{
+               padding-right: 22px;
+           }
+       }
+    
+        
+    }
+
+    @media screen and (min-width: 768px) {
         .card{
             display: flex;
             flex-direction: row;
@@ -264,6 +325,63 @@ body{
             width: 60%;
             height: 60%;
         }
+
+        section{
+            div{
+                div.flexRow{
+                display: flex;
+                flex-direction: row;
+                margin: 5px;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 2%;
+                padding-top: 2%;
+                padding-left: 30%;
+                    ul{
+                        img.fotoOpcion{
+                         max-width: 10%;
+                         max-height: 10%;
+                        }
+                    }
+                
+                }
+            }
+        }     
     }
 
+    @media screen and (min-width: 1200px) {
+        header{
+             ul.flex-column{
+             display: inline-block;  
+             }
+      
+ 
+        }
+        section{
+            
+            div.sectionIndex{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 400px;
+                padding-right: 400px;
+                margin-bottom: 20px;
+                 
+                div.borderLeft{
+                    border-left: solid 1px $fontcolor;
+                    padding-left: 10px;
+                }
+                img.fotoOpcion{
+                    max-width: 10%;
+                    max-height: 10%;
+                    padding-right: 5px;
+                }  
+              
+            }
+
+        }
+
+        
+        
+    }
 }

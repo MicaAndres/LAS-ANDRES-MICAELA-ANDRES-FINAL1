@@ -10,6 +10,7 @@ body header {
   justify-content: center;
   border-bottom: solid 3px #fceee6;
   margin-bottom: 20px;
+  background-image: linear-gradient(to top, #FAF5F2, white);
 }
 
 body header div img.logo {
@@ -51,7 +52,7 @@ body article.newsletter input {
   text-decoration-line: none;
   border: 0;
   text-decoration-color: #22333b;
-  background-color: #f9fafb;
+  background-color: #F9FAFB;
   color: #22333b;
   border-bottom: solid 1px #22333b;
   margin-bottom: 10px;
@@ -98,6 +99,7 @@ body footer {
   background-color: #FAF5F2;
   border-top: solid 3px #fceee6;
   margin-top: 20px;
+  background-image: linear-gradient(to bottom, #FAF5F2, white);
 }
 
 body footer ul li a {
@@ -147,6 +149,7 @@ body section.contacto form {
   padding: 20px;
   border: solid 3px #fceee6;
   background-color: #FAF5F2;
+  background-image: linear-gradient(to bottom, #FAF5F2, white);
 }
 
 body section.contacto form input {
@@ -179,14 +182,16 @@ body section.contacto form input.enviar:hover {
 }
 
 body section.gracias {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-image: linear-gradient(to bottom, #FAF5F2, white);
 }
 
 body section.inSesion form {
   padding: 20px;
   border: solid 3px #fceee6;
   background-color: #FAF5F2;
+  background-image: linear-gradient(to bottom, #FAF5F2, white);
 }
 
 body section.inSesion form input {
@@ -260,9 +265,9 @@ body section.productos input:hover {
   }
   body section div div.flexRow {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     margin: 5px;
-    justify-content: center;
     align-items: center;
     padding-bottom: 5%;
     padding-top: 5%;
@@ -291,9 +296,9 @@ body section.productos input:hover {
   }
   body section div div.flexRow {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     margin: 5px;
-    justify-content: center;
     align-items: center;
     padding-bottom: 2%;
     padding-top: 2%;

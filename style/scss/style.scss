@@ -6,21 +6,28 @@ body{
     background-color: $bgcolor;
     font-family: $fontfamily;
     color: $fontcolor;
+
+    @mixin flex-center{
+        display: flex;
+        justify-content: center;
+    }
     header{
         background-color: $colorheaderfooter;
         justify-content: center;
         border-bottom: solid 3px $colorborder;
-        margin-bottom: 20px;
+        margin-bottom: $spacingpixeles+10;
+        background-image: linear-gradient(to top, $colorheaderfooter, white );
+
         div{
             
             img.logo{
-               border-radius: 80px; 
+               border-radius: $spacingpixeles*8; 
             }
         } 
         div{  
-            padding-top: 30px; 
+            padding-top: $spacingpixeles*3; 
             ul{
-                display: flex;
+               display: flex;
                 justify-content: end;
                 li{
                     a{
@@ -29,7 +36,7 @@ body{
                         color: $fontcolor; 
                         &:hover{
                             color: $fontcolor;
-                            font-size: 18px;
+                            font-size: $spacingpixeles+8;
                         }
                     } 
 
@@ -44,17 +51,16 @@ body{
     }
    
     article.newsletter{
-        display: flex;
-        justify-content: center;
-        outline: #22333b;
-        border-bottom: solid 1px #22333b;
+        @include flex-center;
+        outline: $fontcolor;
+        border-bottom: $border;
         input{
             text-decoration-line: none;
             border: 0;
-            text-decoration-color:#22333b;
-            background-color: #f9fafb;
-            color: #22333b;
-            border-bottom: solid 1px #22333b;
+            text-decoration-color: $fontcolor;
+            background-color: $bgcolor;
+            color: $fontcolor;
+            border-bottom: $border;
             margin-bottom: 10px;
             
         }
@@ -63,14 +69,14 @@ body{
 
     aside{
         img{
-            width: 120px ;
-            height: 300px;
+            width: $spacingpixeles*12 ;
+            height: $spacingpixeles*30;
         }
         input{
 
-            border-radius: 15px;
+            border-radius: $spacingpixeles+5;
             border: solid 2px $colorborder;
-            color: #22333b;
+            color: $fontcolor;
             background-color: $bgcolor;
             &:hover{
                 text-decoration: none;
@@ -84,15 +90,14 @@ body{
 
     section.sectionIndex{
         display: flex;
-
         align-items: center;
         justify-content: space-between;
-        padding-left: 400px;
-        padding-right: 400px;
-        margin-bottom: 20px;
+        padding-left: $spacingpixeles*40;
+        padding-right: $spacingpixeles*40;
+        margin-bottom: $spacingpixeles+10;
          
         div.borderLeft{
-            border-left: solid 1px $fontcolor;
+            border-left:$border;
             padding-left: 10px;
         }
         img.fotoOpcion{
@@ -107,6 +112,8 @@ body{
         background-color: $colorheaderfooter;
         border-top: solid 3px $colorborder;
         margin-top: 20px;
+        background-image: linear-gradient(to bottom, $colorheaderfooter, white );
+
         ul{
             li{
 
@@ -145,22 +152,22 @@ body{
     }
 
     article.tituloSecundario{
-        display: flex;
-        justify-content: center;
+      @include flex-center;
         margin-bottom: 50px;
     }
 
     section.contacto{
-        display: flex;
-        justify-content: center;
+      @include flex-center;
         margin-bottom: 50px;
     
         form{
             padding: 20px;
             border: solid 3px $colorborder;
             background-color: $colorheaderfooter;
+            background-image: linear-gradient(to bottom, $colorheaderfooter, white );
+
             input{
-                border: solid 1px $fontcolor;
+                border: $border;
                 color: $fontcolor;
                 font-family: $fontfamily;
             }
@@ -177,7 +184,7 @@ body{
             input.enviar{
                 border-radius: 5px;
                 border: solid 2px $colorborder;
-                color: #22333b;
+                color: $fontcolor;
                 background-color: $bgcolor;
                 &:hover{
                     text-decoration: none;
@@ -190,8 +197,10 @@ body{
     }
 
     section.gracias{
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: $spacingporcentaje/2;
+        padding-bottom: $spacingporcentaje/2;
+        background-image: linear-gradient(to bottom, $colorheaderfooter, white );
+
     }
 
     section.inSesion{
@@ -199,8 +208,10 @@ body{
             padding: 20px;
             border: solid 3px $colorborder;
             background-color: $colorheaderfooter;
+            background-image: linear-gradient(to bottom, $colorheaderfooter, white );
+
             input{
-                border: solid 1px $fontcolor;
+                border: $border;
                 color: $fontcolor;
                 font-family: $fontfamily;
             }
@@ -212,8 +223,8 @@ body{
             }
             input.enviar{
                 border-radius: 5px;
-                border: solid 2px $colorborder;
-                color: #22333b;
+                border: $bordercard;
+                color: $fontcolor;
                 background-color: $bgcolor;
                 &:hover{
                     text-decoration: none;
@@ -226,8 +237,8 @@ body{
 
     aside.nosotras{
         img.miMa{
-            width: 60%;
-            height: 60%;
+            width: $spacingporcentaje*6;
+            height: $spacingporcentaje*6;
             
         }
         p{
@@ -241,7 +252,7 @@ body{
             margin-right: 5%;
         }
         h6{
-            border-bottom: solid 1px $fontcolor;
+            border-bottom: $border;
             margin-right: 10%;
         }
     }
@@ -249,12 +260,12 @@ body{
     section.productos{
        div.card{
            background-color: $bgcolor;
-           border: solid 2px $colorborder;
+           border: $bordercard;
        }
         input{
             border-radius: 15px;
-            border: solid 2px $colorborder;
-            color: #22333b;
+            border: $bordercard;
+            color: $fontcolor;
             background-color: $bgcolor;
             &:hover{
                 text-decoration: none;
@@ -281,10 +292,9 @@ body{
         section{
             div{
                 div.flexRow{
-                display: flex;
+                @include flex-center;
                 flex-direction: row;
                 margin: 5px;
-                justify-content: center;
                 align-items: center;
                 padding-bottom: 5%;
                 padding-top: 5%;
@@ -329,21 +339,20 @@ body{
         section{
             div{
                 div.flexRow{
-                display: flex;
-                flex-direction: row;
-                margin: 5px;
-                justify-content: center;
-                align-items: center;
-                padding-bottom: 2%;
-                padding-top: 2%;
-                padding-left: 30%;
+                    @include flex-center;
+                    flex-direction: row;
+                    margin: 5px;
+                    align-items: center;
+                    padding-bottom: 2%;
+                    padding-top: 2%;
+                    padding-left: 30%;
                     ul{
                         img.fotoOpcion{
-                         max-width: 10%;
-                         max-height: 10%;
+                        max-width: 10%;
+                        max-height: 10%;
                         }
                     }
-                
+                    
                 }
             }
         }     
